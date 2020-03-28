@@ -1,9 +1,9 @@
 %Same thing as iterateMid(), takes in an x and y vector and then the Matrix
 %M that reprsents the iteration
-function iterateMidNorm(x,y,M)
+function iterateMidNorm(x,y,M,iter)
 
 hold on
-for i = 1:20
+for i = 1:iter
     %Add the first elements to the end just so that Matlab plots the cycle
     x(length(x)+1) = x(1);
     y(length(y)+1) = y(1);
