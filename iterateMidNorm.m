@@ -1,6 +1,6 @@
 %Same thing as iterateMid(), takes in an x and y vector and then the Matrix
 %M that reprsents the iteration
-function iterateMidNorm(x,y,M,iter)
+function iterateMidNorm(x,y,iter)
 
 hold on
 for i = 1:iter
@@ -14,6 +14,10 @@ for i = 1:iter
     %Remove the first element from the end before calculating the next x,y
     x(length(x)) = [];
     y(length(y)) = [];
+    
+     
+    %Find
+    M = produceMidpointMat(length(x));
     
     %apply M to x and then normalize
     x = M*x;

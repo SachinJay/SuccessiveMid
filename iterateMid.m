@@ -1,6 +1,8 @@
 %takes in an x vector and a y vector along with the matrix M used to
 %iterate. If we want to run the process in reverse, we simply supply the
 %inver of M instead of M itself. 
+
+%Note that x and y are column vectors
 function iterateMid(x,y,iter)
 
 %So we can graph multiple things on one set of axes
