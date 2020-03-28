@@ -1,4 +1,8 @@
-function iterateMidRev(x,y, A)
+function iterateMidRev(x,y)
+
+M = produceMidpointMat(length(x));
+A = M^-1;
+
 hold on
 
 for i = 1:100
